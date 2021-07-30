@@ -1,118 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="slider-container">
-      <div class="slider-control left inactive"></div>
-      <div class="slider-control right"></div>
-      <ul class="slider-pagi"></ul>
-      <div class="slider">
-        <div class="slide slide-0 active">
-          <div class="slide__bg"></div>
-          <div class="slide__content">
-            <svg
-              class="slide__overlay"
-              viewBox="0 0 720 405"
-              preserveAspectRatio="xMaxYMax slice"
-            >
-              <path class="slide__overlay-path" d="M0,0 150,0 400,405 0,405" />
-              
-            </svg>
-            <div class="slide__text">
-              <h2 class="slide__text-heading">Project name 1</h2>
-              <p class="slide__text-desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Distinctio veniam minus illo debitis nihil animi facere,
-                doloremque voluptate tempore quia. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Distinctio veniam minus illo
-                debitis nihil animi facere, doloremque voluptate tempore quia.
-              </p>
-              <a class="slide__text-link">Project link</a>
+        <img width="200px" id="test-img" style="position: absolute; z-index: 2; top: 10%;left: calc(50% - 100px);" src="https://res.cloudinary.com/mobileimages/image/upload/v1627595170/clients/sfblic/2023/logo/greek-isle_white_stroked.png" alt="">
+        <div class="slider-control left inactive"></div>
+        <div class="slider-control right"></div>
+        <ul class="slider-pagi"></ul>
+        <div class="slider">
+            <div class="slide slide-0 active">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 600,405 0,405" />
+
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading">Athens (Piraeus), Greece</h2>
+                        <p class="slide__text-desc">
+                            Dubbed the birthplace of western civilization, Athens has embraced modern culture while preserving the many significant monuments and traditions from its ancient empire.
+                        </p>
+                        <a class="slide__text-link">Visit Page</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="slide slide-1">
-          <div class="slide__bg"></div>
-          <div class="slide__content">
-            <svg
-              class="slide__overlay"
-              viewBox="0 0 720 405"
-              preserveAspectRatio="xMaxYMax slice"
-            >
-              <path class="slide__overlay-path" d="M0,0 150,0 400,405 0,405" />
-            </svg>
-            <div class="slide__text">
-              <h2 class="slide__text-heading">Project name 2</h2>
-              <p class="slide__text-desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Distinctio veniam minus illo debitis nihil animi facere,
-                doloremque voluptate tempore quia. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Distinctio veniam minus illo
-                debitis nihil animi facere, doloremque voluptate tempore quia.
-              </p>
-              <a class="slide__text-link">Project link</a>
+            <div class="slide slide-1">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 600,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading">Santorini, Greece</h2>
+                        <p class="slide__text-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil
+                            animi facere, doloremque voluptate tempore quia.
+                        </p>
+                        <a class="slide__text-link">Project link</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="slide slide-2">
-          <div class="slide__bg"></div>
-          <div class="slide__content">
-            <svg
-              class="slide__overlay"
-              viewBox="0 0 720 405"
-              preserveAspectRatio="xMaxYMax slice"
-            >
-              <path class="slide__overlay-path" d="M0,0 150,0 400,405 0,405" />
-            </svg>
-            <div class="slide__text">
-              <h2 class="slide__text-heading">Project name 3</h2>
-              <p class="slide__text-desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Distinctio veniam minus illo debitis nihil animi facere,
-                doloremque voluptate tempore quia. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Distinctio veniam minus illo
-                debitis nihil animi facere, doloremque voluptate tempore quia.
-              </p>
-              <a class="slide__text-link">Project link</a>
+            <div class="slide slide-2">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 600,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading">Kusadasi, Turkey</h2>
+                        <p class="slide__text-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil
+                            animi facere, doloremque voluptate tempore quia.
+                        </p>
+                        <a class="slide__text-link">Project link</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="slide slide-3">
-          <div class="slide__bg"></div>
-          <div class="slide__content">
-            <svg
-              class="slide__overlay"
-              viewBox="0 0 720 405"
-              preserveAspectRatio="xMaxYMax slice"
-            >
-              <path class="slide__overlay-path" d="M0,0 150,0 400,405 0,405" />
-            </svg>
-            <div class="slide__text">
-              <h2 class="slide__text-heading">Project name 4</h2>
-              <p class="slide__text-desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Distinctio veniam minus illo debitis nihil animi facere,
-                doloremque voluptate tempore quia. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Distinctio veniam minus illo
-                debitis nihil animi facere, doloremque voluptate tempore quia.
-              </p>
-              <a class="slide__text-link">Project link</a>
+            <div class="slide slide-3">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                        <path class="slide__overlay-path" d="M0,0 150,0 600,405 0,405" />
+                    </svg>
+                    <div class="slide__text">
+                        <h2 class="slide__text-heading">Mykonos, Greece</h2>
+                        <p class="slide__text-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil
+                            animi facere, doloremque voluptate tempore quia.
+                        </p>
+                        <a class="slide__text-link">Project link</a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    <div class="nav" style="display:block;">
+        <div class="hamburger">
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+
+        </div>
+        <div id="scroll_nav">
+            <ul>
+                <li class="logo"><img src="https://res.cloudinary.com/mobileimages/image/upload/v1542745482/p117-SFBLIC_RT/sfb.png" style="width: inherit;"></li>
+                <li><a href="index.html" style="color: #000;">Home</a></li>
+                <li><a href="inclusions.html" style="color: #000;">Inclusions</a></li>
+                <li><a href="agenda.html" style="color: #000;">Agenda</a></li>
+                <li><a href="destination.html" style="color: #000;">Destination</a></li>
+                <li><a href="activities.html" style="color: #000;">Activities</a></li>
+                <li><a href="guidelines.html" style="color: #000;">Guidelines</a></li>
+                <li><a href="gettingReady.html" style="color: #000;">Getting Ready</a></li>
+                <li><a href="airInfo.html" style="color: #000;">Air Info</a></li>
+                <li><a href="faq.html" style="color: #000;">FAQ</a></li>
+                <li><a href="contact.html" style="color: #000;">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="custom-animated mt-5">
+        <span>W</span>
+        <span>E</span>
+        <span>L</span>
+        <span>C</span>
+        <span>0</span>
+        <span>M</span>
+        <span>E</span>
+    </div>
+    <div id="countdown_concept" style="text-align: center;">
+        <ul id="countdown">
+
+        </ul>
+    </div>
+    <div class="text-center">
+        <p>
+            <a class="btn fill mt-2 aos-init aos-animate" href="#destination-keybiscayne" data-aos="fade-down" data-aos-duration="1750" data-aos-delay="100">Key Biscayne &amp; Miami</a>
+            <a class="btn fill mt-2 aos-init aos-animate" href="#destination-ritzcarlton" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="100">The Ritz-Carlton Key Biscayne</a>
+            <a class="btn fill mt-2 aos-init aos-animate" href="#activities" data-aos="fade-up" data-aos-duration="2750" data-aos-delay="250">Activities/Things to Do
+            </a>
+            <a class="btn fill mt-2 aos-init aos-animate" href="#tours" data-aos="fade-down" data-aos-duration="2500" data-aos-delay="750">Tours
+            </a>
+        </p>
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente praesentium quis nihil sunt nostrum eligendi sit voluptatum blanditiis molestiae. Veniam eos quaerat, temporibus praesentium quis sequi similique eligendi. Temporibus, incidunt! Blanditiis
+        minima! Pariatur quos rem illo eaque eligendi aliquid optio earum veniam voluptas velit accusamus laudantium magni alias repellendus, provident am dolores assumenda temporibus necessitatibus repudiandae repellat impedit ullam, pariatur non beatae
+        ab cumque quidem harum minus velit. Reprehenderit. Delectus rem necessitatibus mollitia. Fugiat distinctio sunt rem voluptatem animi deleniti culpa odio temporibus quaerat unde vitae, ratione nam. Excepturi, explicabo. Molestias nulla dolor deleniti
+        sint veritatis magni aliquid eaque! Molestias perspiciatis consectetur tempore sequi, dolor at ea labore nesciunt atque blanditiis inventore unde minima quis quaerat ut magni repellendus voluptate? Ipsum cum, asperiores consectetur illo consequuntur
+        nam inventore non? Quas sit quam dolorem molestiae enim illum inventore iusto unde vitae, nemo, vel ut esse aliquid numquam nulla distinctio, commodi nesciunt impedit odit officia porro magni perferendis officiis. Dolor, voluptas! Quia labore
+        harum ab at ipsam magnam molestiae impedit aliquid quam vero voluptate accusantium repudiandae nobis, omnis, praesentium maxime vel consequuntur totam voluptates pariatur molestias fuga dolores! Et, aut quidem? Vero, libero expedita. Illum, suscipit
+        ad? Eveniet, odio vitae. Laborum reiciendis animi quos accusantium doloribus adipisci et iste quo temporibus beatae, doloremque explicabo illum fuga amet perferendis! Labore, harum deleniti. Molestias sunt tempora nisi sequi magni libero veniam
+        quisquam. At, quidem laudantium illo consequuntur molestiae laboriosam magni fuga dignissimos, neque sapiente fugit beatae recusandae excepturi reiciendis quis illum ad iste! Quas voluptates cupiditate dolor minus cum, officia omnis repellat ratione
+        animi accusantium eveniet veniam sint molestiae eum itaque qui ipsam alias odit. Adipisci, quam recusandae possimus iste amet impedit velit. Ex, laboriosam tempore aspernatur ipsa vitae consectetur explicabo quam mollitia exercitationem iusto
+        voluptas alias at quos sunt voluptates perspiciatis, suscipit atque, illo minus soluta veniam. Iste delectus assumenda facere quisquam? Quam perferendis corrupti repudiandae accusantium veritatis similique, perspiciatis ad dolores iusto, voluptas
+        aperiam eos hic reiciendis at facere. Quae sit molestiae autem impedit commodi quos quia, itaque libero accusantium expedita. Minima, nemo? Ab cupiditate voluptates, ipsum, deserunt eum expedita nemo temporibus ad labore eaque rem, facilis architecto
+        iure quos? Reprehenderit laboriosam nemo totam voluptates. Sequi quo voluptas hic obcaecati maxime. Maxime, suscipit rem animi voluptas alias amet ad unde minus eaque consectetur. Minima assumenda dolore dignissimos quisquam expedita dicta officiis
+        voluptatum laudantium magnam facilis! Dolorum illo fugiat error veniam architecto. Quae tempore fugit, laboriosam blanditiis optio porro aliquam voluptatum inventore eligendi quas aspernatur ea? Qui, nostrum quibusdam magni reprehenderit esse
+        asperiores maxime sint sit saepe nihil dignissimos minus impedit veritatis. Itaque beatae nam quisquam quas rerum, numquam illo. Similique ad cumque obcaecati quam libero repudiandae. Debitis animi totam doloribus nostrum molestiae minus rerum
+        qui similique explicabo fugit, doloremque omnis non id officiis labore earum fugiat sequi eaque, natus dolorem perferendis. Repellat ea aut dicta nesciunt!
+    </div>
+
+    <div class="container-fluid" id="agenda">
+        <div class="custom-animated mt-5">
+            <span>W</span>
+            <span>a</span>
+            <span>v</span>
+            <span>e</span>
+            <span></span>
+            <span>1</span>
+        </div>
+        <div class="custom-container w1 my-4">
+            <div class="custom-grid">
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/w_500,h_250/v1621435859/clients/country/185/cf-activities/bikes_brews.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">SATURDAY</div>
+                        <h3 class="custom-h3">July 31</h3>
+                        <ul>
+                            <li class="ec">Executive Club Arrivals</li>
+                            <li class="ec">Group Check-In</li>
+                            <li class="ec">6:00pm Executive Club Dinner - Versace Mansion
+                                <ul>
+                                    <li class="ec">Attire: Resort Chic</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/w_500,h_250/v1619794721/clients/sfblic/2021-kb/destination/kayak.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">SUNDAY</div>
+                        <h3 class="custom-h3">August 1</h3>
+                        <ul>
+                            <li class="ec">7:30am - 9:30am Executive Club Breakfast - Ocean Lawn</li>
+                            <li>7:00am - 7:00pm Exclusive Pool Chairs - North &amp; South Tropez Lawn
+                                <ul>
+                                    <li>2020 All American Pool Wristband Required</li>
+                                    <li>First come, first served</li>
+                                    <li>11:00am - 6pm: Cash bar and beverage carts&nbsp;</li>
+                                    <li>11:30am - 3:30pm: Food for purchase</li>
+                                </ul>
+                            </li>
+                            <li>All American Arrivals</li>
+                            <li>Group Check-In</li>
+                            <li>Dinner at Leisure with Cash Allowance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/w_500,h_250/v1619788859/clients/sfblic/2021-kb/destination/kb-golfer.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">MONDAY</div>
+                        <h3 class="custom-h3">August 2</h3>
+                        <ul>
+                            <li>7:00am - 7:00pm Exclusive Pool Chairs - North &amp; South Tropez Lawn
+                                <ul>
+                                    <li>2020 All American Pool Wristband Required</li>
+                                    <li>First come, first served</li>
+                                    <li>11:00am - 6pm: Cash bar and beverage carts&nbsp;</li>
+                                    <li>11:30am - 3:30pm: Food for purchase</li>
+                                </ul>
+                            </li>
+                            <li>7:30am - 9:30am Breakfast - Ocean Lawn</li>
+                            <li>Hosted Activities</li>
+                            <li>6:00pm Havana Nights Dinner - Glimmer Ballroom, Fontainebleau
+                                <ul>
+                                    <li>Attire: Resort Casual</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/v1619788855/clients/sfblic/2021-kb/destination/crandon_lifeguard.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">TUESDAY</div>
+                        <h3 class="custom-h3">August 3</h3>
+                        <ul>
+                            <li>7:00am - 7:00pm Exclusive Pool Chairs - North &amp; South Tropez Lawn
+                                <ul>
+                                    <li>2020 All American Pool Wristband Required</li>
+                                    <li>First come, first served</li>
+                                    <li>11:00am - 6pm: Cash bar and beverage carts&nbsp;</li>
+                                    <li>11:30am - 3:30pm: Food for purchase</li>
+                                </ul>
+                            </li>
+                            <li>7:30am - 9:30am Breakfast - Ocean Lawn</li>
+                            <li>Hosted Activities</li>
+                            <li>Dinner at Leisure with Cash Allowance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/w_500,h_250/v1619794751/clients/sfblic/2021-kb/travel/beach_bike.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">WEDNESDAY</div>
+                        <h3 class="custom-h3">August 4</h3>
+                        <ul>
+                            <li>7:00am - 7:00pm Exclusive Pool Chairs - North &amp; South Tropez Lawn
+                                <ul>
+                                    <li>2020 All American Pool Wristband Required</li>
+                                    <li>First come, first served</li>
+                                    <li>11:00am - 6pm: Cash bar and beverage carts&nbsp;</li>
+                                    <li>11:30am - 3:30pm: Food for purchase</li>
+                                </ul>
+                            </li>
+                            <li>7:30am - 9:30am Breakfast - Ocean Lawn</li>
+                            <li>Hosted Activities</li>
+                            <li>6:00pm Dine Arounds</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/v1619792430/clients/sfblic/2021-kb/agenda/gala.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">THURSDAY</div>
+                        <h3 class="custom-h3">August 5</h3>
+                        <ul>
+                            <li>7:00am - 7:00pm Exclusive Pool Chairs - North &amp; South Tropez Lawn
+                                <ul>
+                                    <li>2020 All American Pool Wristband Required</li>
+                                    <li>First come, first served</li>
+                                    <li>11:00am - 6pm: Cash bar and beverage carts&nbsp;</li>
+                                    <li>11:30am - 3:30pm: Food for purchase</li>
+                                </ul>
+                            </li>
+                            <li>7:30am - 9:30am Breakfast - Ocean Lawn</li>
+                            <li>Hosted Activities</li>
+                            <li>Group Check-In</li>
+                            <li>Celebration Dinner - Glimmer Ballroom, Fontainebleau
+                                <ul>
+                                    <li>Attire: Resort Chic</li>
+                                    <li>Combined with W2</li>
+                                </ul>
+                            </li>
+                            <li>After Party - LIV Nightclub
+                                <ul>
+                                    <li>Attire: Resort Chic</li>
+                                    <li>Combined with W2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/w_500,h_250/v1620063100/clients/sfblic/2021-kb/getting-ready/tsaluggage.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">FRIDAY</div>
+                        <h3 class="custom-h3">August 6</h3>
+                        <ul>
+                            <li>Breakfast - Ocean Lawn
+                                <ul>
+                                    <li>Combined with W2</li>
+                                </ul>
+                            </li>
+                            <li>Departures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container px-5">
+            <div class="row">
+                <div class="col-md-12 shadow p-5"><span class="cf-dg">RESORT CASUAL:</span> Polo style shirts, sundresses, linen pants, skorts, skirts, button up tops, nice shorts, and dresses. Nothing fancy, but not just t-shirts and jeans either. Do not wear cutoffs and tank tops.</div>
+                <div class="col-md-12 shadow p-5"><span class="cf-dg">RESORT CHIC: </span>Lightweight, breathable fabrics (cotton &amp; linen), neutrals paired with bright, sunny colors (seafoam, orange, bright pink, &amp; yellow). Maxi dresses in light shades, printed sundresses with
+                    sandals or wedges. Relaxed button-up, tailored shorts, boat shoes or loafers.</div>
+            </div>
+        </div>
+        <div class="custom-container w2 my-4">
+            <div class="container text-center">
+                <div class="custom-animated custom-extra">Wave 2</div>
+                <p class="text-center">(subject to change)</p>
+            </div>
+            <div class="custom-grid">
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/w_500,h_250/v1619790032/clients/sfblic/2021-kb/agenda/hobie_bch.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">THURSDAY</div>
+                        <h3 class="custom-h3">August 5</h3>
+                        <ul>
+                            <li>Group Check-In</li>
+                            <li>Celebration Dinner - Glimmer Ballroom, Fontainebleau
+                                <ul>
+                                    <li>Attire: Resort Chic</li>
+                                    <li>Combined with W1</li>
+                                </ul>
+                            </li>
+                            <li>After Party - LIV Nightclub
+                                <ul>
+                                    <li>Attire: Resort Chic</li>
+                                    <li>Combined with W1</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/w_500,h_250/v1619788945/clients/sfblic/2021-kb/agenda/boats-in-bay.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">FRIDAY</div>
+                        <h3 class="custom-h3">August 6</h3>
+                        <ul>
+                            <li>7:00am - 7:00pm Exclusive Pool Chairs - North &amp; South Tropez Lawn
+                                <ul>
+                                    <li>2020 All American Pool Wristband Required</li>
+                                    <li>First come, first served</li>
+                                    <li>11:00am - 6pm: Cash bar and beverage carts&nbsp;</li>
+                                    <li>11:30am - 3:30pm: Food for purchase</li>
+                                </ul>
+                            </li>
+                            <li>7:30am - 9:30am Breakfast - Ocean Lawn
+                                <ul>
+                                    <li>Combined with W1</li>
+                                </ul>
+                            </li>
+                            <li>Hosted Activities</li>
+                            <li>6:00pm Havana Nights Dinner - Glimmer Ballroom, Fontainebleau
+                                <ul>
+                                    <li>Attire: Resort Casual</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/v1619797707/clients/country/185/cfaa_185_splitter_new-sm.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">SATURDAY</div>
+                        <h3 class="custom-h3">August 7</h3>
+                        <ul>
+                            <li>7:00am - 7:00pm Exclusive Pool Chairs - North &amp; South Tropez Lawn
+                                <ul>
+                                    <li>2020 All American Pool Wristband Required</li>
+                                    <li>First come, first served</li>
+                                    <li>11:00am - 6pm: Cash bar and beverage carts&nbsp;</li>
+                                    <li>11:30am - 3:30pm: Food for purchase</li>
+                                </ul>
+                            </li>
+                            <li>7:30am - 9:30am Breakfast - Ocean Lawn</li>
+                            <li>Hosted Activities</li>
+                            <li>Dinner at Leisure with Cash Allowance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/w_500,h_250/v1621437297/clients/country/185/cf-activities/spa_massage_sm.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">SUNDAY</div>
+                        <h3 class="custom-h3">August 8</h3>
+                        <ul>
+                            <li>7:00am - 7:00pm Exclusive Pool Chairs - North &amp; South Tropez Lawn
+                                <ul>
+                                    <li>2020 All American Pool Wristband Required</li>
+                                    <li>First come, first served</li>
+                                    <li>11:00am - 6pm: Cash bar and beverage carts&nbsp;</li>
+                                    <li>11:30am - 3:30pm: Food for purchase</li>
+                                </ul>
+                            </li>
+                            <li>7:30am - 9:30am Breakfast - Ocean Lawn</li>
+                            <li>Hosted Activities</li>
+                            <li>6:00pm Dine Arounds</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/w_500,h_250/v1621436964/clients/country/185/cf-activities/wynwood_culinary-sm.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">MONDAY</div>
+                        <h3 class="custom-h3">August 9</h3>
+                        <ul>
+                            <li>7:00am - 7:00pm Exclusive Pool Chairs - North &amp; South Tropez Lawn
+                                <ul>
+                                    <li>2020 All American Pool Wristband Required</li>
+                                    <li>First come, first served</li>
+                                    <li>11:00am - 6pm: Cash bar and beverage carts&nbsp;</li>
+                                    <li>11:30am - 3:30pm: Food for purchase</li>
+                                </ul>
+                            </li>
+                            <li>7:30am - 9:30am Breakfast - Ocean Lawn</li>
+                            <li>Hosted Activities</li>
+                            <li>Dinner at Leisure with Cash Allowance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/w_500,h_250/v1621437634/clients/country/185/cf-activities/catamaran_tour.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">TUESDAY</div>
+                        <h3 class="custom-h3">August 10</h3>
+                        <ul>
+                            <li>7:00am - 7:00pm Exclusive Pool Chairs - North &amp; South Tropez Lawn
+                                <ul>
+                                    <li>2020 All American Pool Wristband Required</li>
+                                    <li>First come, first served</li>
+                                    <li>11:00am - 6pm: Cash bar and beverage carts&nbsp;</li>
+                                    <li>11:30am - 3:30pm: Food for purchase</li>
+                                </ul>
+                            </li>
+                            <li>7:30am - 9:30am Breakfast - Ocean Lawn</li>
+                            <li>All American Departures</li>
+                            <li class="ec">6:00pm Executive Club Dinner - Versace Mansion
+                                <ul>
+                                    <li>Attire: Resort Chic</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-card--image"><img src="https://res.cloudinary.com/mobileimages/image/upload/w_500,h_250/v1621438595/clients/country/185/cf-activities/art_food_tour.jpg" alt=""></div>
+                    <div class="custom-card--content">
+                        <div class="custom-card--category">WEDNESDAY</div>
+                        <h3 class="custom-h3">August 11</h3>
+                        <ul>
+                            <li class="ec">7:30am - 9:30am - Executive Club Breakfast - Ocean Lawn</li>
+                            <li class="ec">Executive Club Departure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 align-self-center text-center pt-3">
+                    <p>
+                        &copy; Copyright Round Table <span class="fullyear"></span> <span>|</span> All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-12 footer-box">
+                    <ul class="footer-icon text-center">
+                        <li>
+                            <a href="#" class="p-3"><img src="https://res.cloudinary.com/mobileimages/image/upload/c_scale,h_50/v1551373173/clients/sfblic/2019/round-table-137/SFBLI_YFFL-maroon.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+</body>
+
 </html>
